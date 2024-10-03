@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+    background: url(bg1.jpg);
+    color: white;
+  }
+  
+  .container {
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 50px;
+    height: 55vh;
+  }
+  
+  h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-shadow: 20px 20px 60px rgba(255, 255, 255, 0.5);
+    ;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    padding: 15px;
+    border: 0;
+    border-radius: 5px;
+    width: 218px;
+    max-width: 300px;
+    position: relative;
+    background: linear-gradient(150deg, #000,#d3bcc0);
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    font-weight: 350px;
+    letter-spacing: 3px;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    
+  }
+  
+  button {
+    background: linear-gradient(150deg, #000,#d3bcc0);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color:#000;
+    transform: scale(1.1);
+  }
+  
+  #result {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+
+  }
+  @media (max-width: 768px) {
+    .container {
+        max-width: 350px;
+        height: 45vh;
+        margin-top: 250px;
+    }
+    input {
+        width: 180px;
+        max-width: 250px;
+    }
+    button {
+        padding: 8px 15px;
+    }
+    #result {
+        font-size: 20px;
+    }
+}
+
+/* For screens smaller than 480px (mobiles) */
+@media (max-width: 480px) {
+    .container {
+        max-width: 300px;
+        height: 40vh;
+        margin-top: 250px;
+    }
+    input {
+        width: 150px;
+        max-width: 200px;
+    }
+    button {
+        padding: 6px 12px;
+    }
+    #result {
+        font-size: 18px;
+    }
+}
